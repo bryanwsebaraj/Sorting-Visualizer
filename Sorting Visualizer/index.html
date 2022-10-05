@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1 align="center">Sorting Visualizer</h1>
+    <nav>
+        <div class="row1">
+            <div class="col btn-pos-flex" id="newArray">
+                <button type="button" class="btn newArray">New Array</button>
+            </div>
+            <div class="col btn-pos-flex justify-right">
+                <button type="button" class="btn bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn selectionSort">Selection Sort</button>
+                <button type="button" class="btn insertionSort">Insertion Sort</button>
+                <button type="button" class="btn quickSort">Quick Sort</button>
+                <button type="button" class="btn mergeSort">Merge Sort</button>
+                <button type="button" class="btn radixSort">Radix Sort</button>
+                <button type="button" class="btn shellSort">Shell Sort</button>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col bar-text" id="input">
+                <span id="size" align="center">Array Size
+                    <input id="arr_sz" type="range" min="8" max="144" step=8 value=72>
+                </span>
+                <span id="speed" align="center">Sorting Speed
+                    <input id="speed_input" type="range" min="20" max="600" stepDown=10 value=200>
+                </span>
+            </div>
+            <div class="col complexity">
+                <p id="timecomplexity">Worst Case Time Complexity: O()</p>
+            </div>
+            <div class="col complexity">
+                <p id="spacecomplexity">Worst Case Space Complexity: O()</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col cur-run-text">
+                <p id="currentSort">Currently Running: </p>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    
+    <div id="bars" class="flexCon"></div>
+
+    <script src="src/sorting.js"></script>
+    <script src="src/bubble.js"></script>
+    <script src="src/insertion.js"></script>
+    <script src="src/merge.js"></script>
+    <script src="src/quick.js"></script>
+    <script src="src/selection.js"></script>
+    <script src="src/radix.js"></script>
+    <script src="src/shell.js"></script>
+</body>
+</html>
